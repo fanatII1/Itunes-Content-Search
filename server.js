@@ -4,7 +4,6 @@ const cors = require('cors');
 const helmet = require('helmet')
 const fetch = require('node-fetch');
 const path = require('path')
-
 const app = express();
 
 //server usage of cors and body-parser

@@ -26,7 +26,7 @@ function Search() {
 
     //function sends a post request(waits till the promise is resolved)
     async function postReq() {
-      return await fetch('http://localhost:3001/', {
+      return  fetch('/', {
         method: "POST",
         headers:{ "Content-Type": "application/json" },
         body: JSON.stringify(userData)
