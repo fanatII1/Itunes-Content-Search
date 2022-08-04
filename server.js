@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 //implement helmet for security
 app.use(helmet());
+helmet.contentSecurityPolicy()
 
 //join public folder
 app.use(express.static(path.join(__dirname + '/public')))
