@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const helmet = require('helmet')
+const helmet = require('helmet')
 const fetch = require('node-fetch');
 const path = require('path')
 const app = express();
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 //implement helmet for security
-// app.use(helmet());
+app.use(helmet());
 
 //join public folder
 app.use(express.static(path.join(__dirname + '/public')))
